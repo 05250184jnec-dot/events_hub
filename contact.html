@@ -1,33 +1,59 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>JNEC Events Hub — contact</title> 
-</head> 
-<body> 
-  <header id="top"> 
-    <h1>JNEC Events Hub</h1> 
-    <nav> 
-      <a href="index.html" title="Go to home page">Home</a> 
-      <a href="events.html">Events</a> 
-      <a href="register.html">Register</a> 
-      <a href="gallery.html">Gallery</a> 
-      <a href="contact.html">Contact</a> 
-    </nav> 
-  </header> 
-  <main> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JNEC Events Hub — Contact</title>
+</head>
+<body>
+  <header id="top">
+    <h1>JNEC Events Hub</h1>
+    <nav>
+      <a href="index.html" title="Go to home page">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
     <h2>Contact Us</h2>
-  <p>Email: info@jneceventshub.com</p>
-  <p>Phone: +975-12345678</p>
-  <form action="submit_contact.php" method="post">
-    <label for="message">Your Message:</label><br>
-    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
-    <button type="submit">Send</button>
-  </form> <!-- page content here --> 
-  </main> 
-  <footer> 
-    <p>&copy; 2026 JNEC Events Hub</p> 
-  </footer> 
-</body> 
-</html> 
+
+    <h3>College Address</h3>
+    <p>Samdrup Jongkhar, Bhutan</p>
+
+    <h3>Email</h3>
+    <p><a href="mailto:info@jneceventshub.com">info@jneceventshub.com</a></p>
+
+    <h3>Phone</h3>
+    <p>+975-12345678</p>
+
+    <h3>Map</h3>
+    <iframe 
+      src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88" 
+      width="400" 
+      height="350" 
+      style="border:1px solid black">
+    </iframe>
+
+    <h3>Enquiry Form</h3>
+    <form action="submit_contact.php" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 JNEC Events Hub</p>
+  </footer>
+</body>
+</html>
