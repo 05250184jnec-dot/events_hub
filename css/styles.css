@@ -139,3 +139,16 @@ body { color: rgb(30, 41, 59); }   /* RGB */
 h2 { color: #0369a1; }             /* hexadecimal */
 .highlight { color: crimson; }     /* named */
 header { background-color: #0f172a; }
+
+/* D */
+.intro {
+  margin: 24px 16px 32px 16px; /* top right bottom left */
+  padding: 20px; /* all four sides */
+  border: 1px solid #e2e8f0;
+  background: white;
+}
+
+section {
+  margin-bottom: 28px;
+  padding-left: 8px;
+}
