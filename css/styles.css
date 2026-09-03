@@ -34,7 +34,7 @@ main {
 
 
 /* simple selectors */
-h1 { color: #0f172a; }                          /* element */
+h1 { color: white; }                         /* element */
 .intro { background: #f8fafc; }                 /* class */
 #welcome { padding: 24px; }                      /* id */
 p.intro { font-size: 1.05rem; }                  /* element.class */
@@ -109,3 +109,33 @@ input[type="text"] {
   border: 1px solid #cbd5e1;
   padding: 8px;
 }
+
+/* C1 */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;    /* base size */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* C2*/
+h1 { font-weight: 700; } body { line-height: 1.6; } .hero-title { letter-spacing: 0.04em; word-spacing: 0.1em;
+} em { font-style: italic; }
+
+/* C3 */
+.intro p { text-indent: 2em; text-align: justify; }
+nav a { text-decoration: none; }
+.sold-out { text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-style: solid; }
+h2 { text-align: left; }
+
+/* C4 */
+body { color: rgb(30, 41, 59); }   /* RGB */
+h2 { color: #0369a1; }             /* hexadecimal */
+.highlight { color: crimson; }     /* named */
+header { background-color: #0f172a; }
