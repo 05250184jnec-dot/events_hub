@@ -172,3 +172,18 @@ img:hover {
 }
 
 @media (max-width: 600px) { nav a { display: block; margin: 4px 0; } body { font-size: 15px; } }
+
+/* Pseudo-class: adds a highlighted left border to any event card
+   currently being hovered, giving clear visual feedback on which
+   event the user is looking at without needing JavaScript */
+.event-card:hover {
+  border-left: 4px solid #0369a1;
+}
+
+/* Attribute selector: styles any link whose href starts with "mailto:",
+   so email contact links are visually distinguishable from regular
+   navigation links at a glance */
+a[href^="mailto:"] {
+  color: #059669;
+  font-weight: 600;
+}
