@@ -1,0 +1,189 @@
+/* FILE: css/styles.css — shared by all Events Hub pages */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 16px 24px;
+}
+
+nav a {
+  color: #7dd3fc;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px 24px;
+  margin-top: 40px;
+}
+
+main {
+  padding: 24px;
+}
+
+
+
+/* simple selectors */
+h1 { color: white; }                         /* element */
+.intro { background: #f8fafc; }                 /* class */
+#welcome { padding: 24px; }                      /* id */
+p.intro { font-size: 1.05rem; }                  /* element.class */
+h1, h2, h3 { font-family: Georgia, serif; }      /* grouping */
+
+
+/* part b2 */
+/* combinators */
+nav a { text-decoration: none; }          /* descendant */
+main > section { margin-bottom: 24px; }   /* child       */
+h2 + p { font-style: italic; }            /* adjacent    */
+h2 ~ p { color: #334155; }                /* general sibling */
+
+/* B3 */
+/* pseudo-classes */
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+input:focus {
+  outline: 2px solid #0369a1;
+}
+
+input:checked + label {
+  font-weight: 700;
+}
+
+tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+/* anchor LVHA order */
+a:link {
+  color: #0369a1;
+}
+
+a:visited {
+  color: #7c3aed;
+}
+
+a:hover {
+  color: #0ea5e9;
+}
+
+a:active {
+  color: #b91c1c;
+}
+
+/* B4 */
+
+/* pseudo-elements */
+ p::first-line {
+     font-weight: bold; } .intro::first-letter {
+         font-size: 1.6em; color: #0369a1; } h2::before {
+             content: "★ "; color: #d97706; } 
+            li::marker { 
+            color: #059669; } ::selection { 
+             color: #7f1d1d; background: #fde68a; } 
+/* B5 */
+/* attribute selectors */
+a[target="_blank"] {
+  color: #d97706;
+}
+
+input[type="file"] {
+  border: 1px dashed #94a3b8;
+  padding: 8px;
+}
+
+input[type="text"] {
+  border: 1px solid #cbd5e1;
+  padding: 8px;
+}
+
+/* C1 */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;    /* base size */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* C2*/
+h1 { font-weight: 700; } body { line-height: 1.6; } .hero-title { letter-spacing: 0.04em; word-spacing: 0.1em;
+} em { font-style: italic; }
+
+/* C3 */
+.intro p { text-indent: 2em; text-align: justify; }
+nav a { text-decoration: none; }
+.sold-out { text-decoration: line-through; text-decoration-color: #ef4444; text-decoration-style: solid; }
+h2 { text-align: left; }
+
+/* C4 */
+body { color: rgb(30, 41, 59); }   /* RGB */
+h2 { color: #0369a1; }             /* hexadecimal */
+.highlight { color: crimson; }     /* named */
+header { background-color: #0f172a; }
+
+/* D */
+.intro {
+  margin: 24px 16px 32px 16px; /* top right bottom left */
+  padding: 20px; /* all four sides */
+  border: 1px solid #e2e8f0;
+  background: white;
+}
+
+section {
+  margin-bottom: 28px;
+  padding-left: 8px;
+}
+
+/* E */
+nav a { display: inline-block; padding: 8px 16px; }
+.admin-only { display: none; }
+.badge { display: inline; }
+.event-card { display: block; }
+
+/*F */
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) { nav a { display: block; margin: 4px 0; } body { font-size: 15px; } }
+
+/* Pseudo-class: adds a highlighted left border to any event card
+   currently being hovered, giving clear visual feedback on which
+   event the user is looking at without needing JavaScript */
+.event-card:hover {
+  border-left: 4px solid #0369a1;
+}
+
+/* Attribute selector: styles any link whose href starts with "mailto:",
+   so email contact links are visually distinguishable from regular
+   navigation links at a glance */
+a[href^="mailto:"] {
+  color: #059669;
+  font-weight: 600;
+}
