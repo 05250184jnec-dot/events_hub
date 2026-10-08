@@ -30,15 +30,12 @@ main {
   padding: 24px;
 }
 
-
-
 /* simple selectors */
 h1 { color: white; }                         /* element */
-.intro { background: #f8fafc; }                 /* class */
-#welcome { padding: 24px; }                      /* id */
-p.intro { font-size: 1.05rem; }                  /* element.class */
-h1, h2, h3 { font-family: Georgia, serif; }      /* grouping */
-
+.intro { background: #f8fafc; }              /* class */
+#welcome { padding: 24px; }                  /* id */
+p.intro { font-size: 1.05rem; }              /* element.class */
+h1, h2, h3 { font-family: Georgia, serif; }  /* grouping */
 
 /* part b2 */
 /* combinators */
@@ -49,83 +46,41 @@ h2 ~ p { color: #334155; }                /* general sibling */
 
 /* B3 */
 /* pseudo-classes */
-
-nav a:hover {
-  color: #38bdf8;
-}
-
-input:focus {
-  outline: 2px solid #0369a1;
-}
-
-input:checked + label {
-  font-weight: 700;
-}
-
-tr:nth-child(even) {
-  background: #f1f5f9;
-}
+nav a:hover { color: #38bdf8; }
+input:focus { outline: 2px solid #0369a1; }
+input:checked + label { font-weight: 700; }
+tr:nth-child(even) { background: #f1f5f9; }
 
 /* anchor LVHA order */
-a:link {
-  color: #0369a1;
-}
-
-a:visited {
-  color: #7c3aed;
-}
-
-a:hover {
-  color: #0ea5e9;
-}
-
-a:active {
-  color: #b91c1c;
-}
+a:link { color: #0369a1; }
+a:visited { color: #7c3aed; }
+a:hover { color: #0ea5e9; }
+a:active { color: #b91c1c; }
 
 /* B4 */
-
 /* pseudo-elements */
- p::first-line {
-     font-weight: bold; } .intro::first-letter {
-         font-size: 1.6em; color: #0369a1; } h2::before {
-             content: "★ "; color: #d97706; } 
-            li::marker { 
-            color: #059669; } ::selection { 
-             color: #7f1d1d; background: #fde68a; } 
+p::first-line { font-weight: bold; }
+.intro::first-letter { font-size: 1.6em; color: #0369a1; }
+h2::before { content: "★ "; color: #d97706; }
+li::marker { color: #059669; }
+::selection { color: #7f1d1d; background: #fde68a; }
+
 /* B5 */
 /* attribute selectors */
-a[target="_blank"] {
-  color: #d97706;
-}
-
-input[type="file"] {
-  border: 1px dashed #94a3b8;
-  padding: 8px;
-}
-
-input[type="text"] {
-  border: 1px solid #cbd5e1;
-  padding: 8px;
-}
+a[target="_blank"] { color: #d97706; }
+input[type="file"] { border: 1px dashed #94a3b8; padding: 8px; }
+input[type="text"] { border: 1px solid #cbd5e1; padding: 8px; }
 
 /* C1 */
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 16px;    /* base size */
-}
+body { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
 
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-/* C2*/
-h1 { font-weight: 700; } body { line-height: 1.6; } .hero-title { letter-spacing: 0.04em; word-spacing: 0.1em;
-} em { font-style: italic; }
+/* C2 */
+h1 { font-weight: 700; }
+body { line-height: 1.6; }
+.hero-title { letter-spacing: 0.04em; word-spacing: 0.1em; }
+em { font-style: italic; }
 
 /* C3 */
 .intro p { text-indent: 2em; text-align: justify; }
@@ -141,16 +96,13 @@ header { background-color: #0f172a; }
 
 /* D */
 .intro {
-  margin: 24px 16px 32px 16px; /* top right bottom left */
-  padding: 20px; /* all four sides */
+  margin: 24px 16px 32px 16px;
+  padding: 20px;
   border: 1px solid #e2e8f0;
   background: white;
 }
 
-section {
-  margin-bottom: 28px;
-  padding-left: 8px;
-}
+section { margin-bottom: 28px; padding-left: 8px; }
 
 /* E */
 nav a { display: inline-block; padding: 8px 16px; }
@@ -158,32 +110,71 @@ nav a { display: inline-block; padding: 8px 16px; }
 .badge { display: inline; }
 .event-card { display: block; }
 
-/*F */
+/* F */
 img {
   max-width: 100%;
   height: auto;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 img:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-
-@media (max-width: 600px) { nav a { display: block; margin: 4px 0; } body { font-size: 15px; } }
-
-/* Pseudo-class: adds a highlighted left border to any event card
-   currently being hovered, giving clear visual feedback on which
-   event the user is looking at without needing JavaScript */
-.event-card:hover {
-  border-left: 4px solid #0369a1;
+@media (max-width: 600px) {
+  nav a { display: block; margin: 4px 0; }
+  body { font-size: 15px; }
 }
 
-/* Attribute selector: styles any link whose href starts with "mailto:",
-   so email contact links are visually distinguishable from regular
-   navigation links at a glance */
-a[href^="mailto:"] {
-  color: #059669;
-  font-weight: 600;
+/* Hover effect for event cards */
+.event-card:hover { border-left: 4px solid #0369a1; }
+
+/* Attribute selector for mailto links */
+a[href^="mailto:"] { color: #059669; font-weight: 600; }
+
+/* Practical-4 */
+/* ===========================
+   Dark mode toggle
+   =========================== */
+#darkToggle {
+  margin: 12px 0;
+  padding: 6px 12px;
+  background-color: #0369a1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+header #darkToggle {
+  float: right;
+  margin-top: -32px;
+}
+
+/* Dark mode rules */
+body.dark {
+  background-color: #0f172a; /* dark background */
+  color: #f8fafc;            /* light text */
+}
+body.dark header,
+body.dark footer {
+  background-color: #1e293b;
+}
+body.dark nav a {
+  color: #38bdf8;
+}
+
+/* ===========================
+   Error message styles
+   =========================== */
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 4px;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: #dc2626;
+  outline: none;
 }

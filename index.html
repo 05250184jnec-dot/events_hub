@@ -58,6 +58,12 @@
 
       <section id="welcome" class="intro">
         <h2>Welcome</h2>
+        
+        
+        <p id="welcomeMsg">Welcome.</p>
+  <button id="darkToggle">Dark Mode</button>
+  <div class="row g-3" id="home-events"></div>
+
         <p>The <strong>Events Hub</strong> lists every upcoming event at 
           <em>Jigme Namgyel Engineering College</em>. 
           <span class="highlight" title="Registrations close 3 days before each event">Register early!</span>
@@ -80,12 +86,10 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 JNEC Events Hub</p>
-  </footer>
-
-  <!-- Bootstrap JS — MUST be last, just before </body> (carousel needs this) -->
-   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <p>&copy; <span id="year"></span> JNEC Events Hub</p>
+</footer>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
