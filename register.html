@@ -37,18 +37,17 @@
           <div class="mb-3">
             <label for="fullname" class="form-label">Full name</label>
             <input type="text" class="form-control" id="fullname" name="fullname">
-            <!-- Error span for validation -->
-            <span class="error" id="fullnameError"></span>
+            <span id="err-fullname" class="error"></span>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="text" class="form-control" id="email" name="email">
-            <span class="error" id="emailError"></span>
+            <span id="err-email" class="error"></span>
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Phone</label>
             <input type="text" class="form-control" id="phone" name="phone">
-            <span class="error" id="phoneError"></span>
+            <span id="err-phone" class="error"></span>
           </div>
         </fieldset>
 
@@ -63,7 +62,8 @@
               <option value="2">Losar Festival Night</option>
               <option value="3">Inter-College Football</option>
             </select>
-            <span class="error" id="eventError"></span>
+            <span id="err-event_id" class="error"></span>
+            <p id="seatsHint" class="seats-hint mt-2">Choose an event to see remaining seats.</p>
           </div>
 
           <!-- Food preference radio buttons -->
@@ -76,7 +76,7 @@
             <input class="form-check-input" type="radio" id="nonveg" name="food" value="nonveg">
             <label class="form-check-label" for="nonveg">Non-vegetarian</label>
           </div>
-          <span class="error" id="foodError"></span>
+          <span id="err-food" class="error"></span>
 
           <!-- Interests checkboxes -->
           <p>Interested in:</p>
@@ -88,14 +88,14 @@
             <input class="form-check-input" type="checkbox" id="perform" name="interests" value="perform">
             <label class="form-check-label" for="perform">Performing</label>
           </div>
-          <span class="error" id="interestsError"></span>
+          <span id="err-interests" class="error"></span>
         </fieldset>
 
         <!-- Date of birth -->
         <div class="mb-3">
           <label for="dob" class="form-label">Date of Birth</label>
           <input type="date" class="form-control" id="dob" name="dob">
-          <span class="error" id="dobError"></span>
+          <span id="err-dob" class="error"></span>
         </div>
 
         <!-- Other details section -->
@@ -109,16 +109,17 @@
               <option value="civil">Civil</option>
               <option value="electrical">Electrical</option>
             </select>
-            <span class="error" id="departmentError"></span>
+            <span id="err-department" class="error"></span>
           </div>
           <div class="mb-3">
             <label for="remarks" class="form-label">Remarks</label>
-            <textarea class="form-control" id="remarks" name="remarks" rows="4"></textarea>
+            <textarea class="form-control" id="remarks" name="remarks" rows="4" maxlength="200"></textarea>
+            <span id="charCount" class="text-muted">0/200</span>
           </div>
           <div class="mb-3">
             <label for="id_card" class="form-label">Student ID card (image)</label>
             <input class="form-control" type="file" id="id_card" name="id_card">
-            <span class="error" id="idCardError"></span>
+            <span id="err-id_card" class="error"></span>
           </div>
         </fieldset>
 
@@ -145,14 +146,11 @@
     <p>&copy; Stay connected with all the latest events, activities, and updates happening at JNEC.</p>
   </footer>
 
-  <!-- Bootstrap bundle (needed for components like carousel) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Shared JS logic for all pages -->
-<script src="js/main.js"></script>
-
-<!-- Validation logic specific to register.html -->
-<script src="js/validate.js"></script>
+  <!-- Bootstrap bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shared JS logic for all pages -->
+  <script src="js/main.js"></script>
+  <!-- Validation logic specific to register.html -->
+  <script src="js/validate.js"></script>
 </body>
 </html>
-
